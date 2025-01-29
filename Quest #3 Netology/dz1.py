@@ -1,5 +1,6 @@
 
-with open("recipes.txt") as f:
+with open('recipes.txt', 'r', encoding='utf-8') as f:
+    cook_book = {}
     for line in f:
         dish_name = line.strip()
         ingredients_qty = int(f.readline().strip())
